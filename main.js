@@ -6,6 +6,7 @@ const createWindow = () => {
     height: 720,
     icon: './images/bento/bento.ico'
   })
+  win.setMenuBarVisibility(false)
 
   win.loadFile('index.html')
 }
