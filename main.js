@@ -2,8 +2,8 @@ const { app, BrowserWindow } = require('electron')
 
 const createWindow = () => {
   const win = new BrowserWindow({
-    width: 1280,
-    height: 720,
+    width: 800,
+    height: 800,
     icon: './images/bento/bento.ico',
     titleBarStyle: 'hidden',
     titleBarOverlay: {
@@ -14,7 +14,7 @@ const createWindow = () => {
   })
   win.setMenuBarVisibility(false)
 
-  win.loadFile('index.html')
+  win.loadFile('login.html')
 }
 
 app.whenReady().then(() => {
